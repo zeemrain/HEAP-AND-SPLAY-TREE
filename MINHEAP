@@ -1,0 +1,22 @@
+import java.util.PriorityQueue;
+
+public class MinHeapDemo {
+    public static void main(String[] args) {
+
+        // Create a Min Heap
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+
+        // Insert elements into the heap
+        minHeap.add(10);
+        minHeap.add(15);
+        minHeap.add(3);
+        minHeap.add(7);
+        minHeap.add(20);
+
+        // Extract the minimum element
+        int min = minHeap.poll(); // removes and returns the smallest element
+
+        // Display the extracted minimum
+        System.out.println("Min-Heap Extract Min: " + min);
+    }
+}
